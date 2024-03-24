@@ -42,16 +42,40 @@ namespace QLDSV_TC
                 rbBaoCao.Visible = false;
                 this.MAGV.Text = "MÃ SV: " + Program.username;
             }
-            
+            if (Program.mGroup == "PKT")
+            {
+                ribbonPageGroup1.Visible = false;
+                ribbonPage2.Visible = false;
+            }
+            if (Program.mGroup != "PKT")
+            {
+                ribbonPageGroup2.Visible = false;
+                ribbonPage2.Visible = false;
+            }
+
         }
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            Form frm = this.CheckExists(typeof(frmNhapDiem));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmNhapDiem f = new frmNhapDiem();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
 
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            Form frm = this.CheckExists(typeof(frmDongHocPhi));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmDongHocPhi f = new frmDongHocPhi();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
 
         private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
@@ -97,6 +121,30 @@ namespace QLDSV_TC
             else
             {
                 frmMonHoc f = new frmMonHoc();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmLopTinChi));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmLopTinChi f = new frmLopTinChi();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnDSLTC_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(reportDanhsachLopTinChi));
+            if (frm != null) frm.Activate();
+            else
+            {
+                reportDanhsachLopTinChi f = new reportDanhsachLopTinChi();
                 f.MdiParent = this;
                 f.Show();
             }

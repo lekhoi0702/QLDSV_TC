@@ -264,6 +264,11 @@ namespace QLDSV_TC
                 MessageBox.Show("Không thể xóa lớp học này vì đã đăng ký lớp tín chỉ", "", MessageBoxButtons.OK);
                 return;
             }
+            if (bdsSINHVIEN.Count == 0)
+            {
+                MessageBox.Show("Chưa có sinh viên để xoá", "", MessageBoxButtons.OK);
+                return;
+            }
 
 
             if (MessageBox.Show("Bạn có thật sự muốn xóa sinh viên này ?", "", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -292,6 +297,7 @@ namespace QLDSV_TC
                 }
                 catch (Exception ex)
                 {
+                           
                     undoList.Pop();
                     MessageBox.Show("Lỗi xóa sinh viên: " + ex.Message, "", MessageBoxButtons.OK);
                     this.LOPTableAdapter.Fill(this.dataSet.LOP);
@@ -391,7 +397,7 @@ namespace QLDSV_TC
                 +"',TEN = N'"+txbTen.Text.Trim()
                 +"',PHAI ="+phai+",DIACHI =N'"+txbDiaChi.Text.Trim()
                 + "',NGAYSINH = CAST('" + NGAYSINH.ToString("yyyy-MM-dd") + "' AS DATE),"+
-                "MALOP='"+txbMaLop.Text.Trim()+"',DANGHIHOC = "+ nghihoc;
+                "MALOP='"+txbMaLop.Text.Trim()+"',DANGHIHOC = "+ nghihoc + " where masv ='" + txbMaSV + "'";
             Console.WriteLine("query" + undoQuery);
             undoList.Push(undoQuery);
 

@@ -283,17 +283,17 @@ namespace QLDSV_TC
             this.panelControl1.Controls.Add(this.label1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 51);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1099, 52);
+            this.panelControl1.Size = new System.Drawing.Size(1099, 65);
             this.panelControl1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(880, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1100, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(317, 32);
             this.label1.TabIndex = 0;
@@ -306,9 +306,9 @@ namespace QLDSV_TC
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 103);
+            this.panel1.Location = new System.Drawing.Point(0, 116);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1099, 452);
+            this.panel1.Size = new System.Drawing.Size(1099, 439);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -319,7 +319,7 @@ namespace QLDSV_TC
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 271);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1099, 181);
+            this.panel5.Size = new System.Drawing.Size(1099, 168);
             this.panel5.TabIndex = 1;
             // 
             // panel6
@@ -329,7 +329,7 @@ namespace QLDSV_TC
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 35);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1099, 146);
+            this.panel6.Size = new System.Drawing.Size(1099, 133);
             this.panel6.TabIndex = 8;
             // 
             // panel9
@@ -338,7 +338,7 @@ namespace QLDSV_TC
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(244, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(855, 146);
+            this.panel9.Size = new System.Drawing.Size(855, 133);
             this.panel9.TabIndex = 2;
             // 
             // gcLOPTINCHI
@@ -348,7 +348,7 @@ namespace QLDSV_TC
             this.gcLOPTINCHI.MainView = this.gridView2;
             this.gcLOPTINCHI.MenuManager = this.barManager1;
             this.gcLOPTINCHI.Name = "gcLOPTINCHI";
-            this.gcLOPTINCHI.Size = new System.Drawing.Size(855, 146);
+            this.gcLOPTINCHI.Size = new System.Drawing.Size(855, 133);
             this.gcLOPTINCHI.TabIndex = 0;
             this.gcLOPTINCHI.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -373,7 +373,7 @@ namespace QLDSV_TC
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(244, 146);
+            this.panel7.Size = new System.Drawing.Size(244, 133);
             this.panel7.TabIndex = 0;
             // 
             // simpleButton2

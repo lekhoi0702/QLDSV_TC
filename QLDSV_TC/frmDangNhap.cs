@@ -139,7 +139,7 @@ namespace QLDSV_TC
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
-            txbTaiKhoan.Text = "pgv";
+            txbTaiKhoan.Text = "pkt";
             txbMatKhau.Text = "123456";
             if (KetNoi_CSDLGOC() == 0) return;
             LayDSPM("SELECT * FROM V_DSPM");
